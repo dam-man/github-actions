@@ -86,7 +86,7 @@ jobs:
           DB_PORT: 33306
           DB_USER: root
 
-        run: php artisan migrate
+        run: php artisan migrate --seed
 
       - name: Show dir
         run: pwd
