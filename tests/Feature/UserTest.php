@@ -20,4 +20,14 @@ class UserTest extends TestCase
             'email' => 'test@example.com'
         ]);
     }
+
+    public function test_users_can_not_authenticate_with_invalid_password()
+    {
+        $this->post('/login', [
+            'email' => 'test@example.com',
+            'password' => 'wrong-password',
+        ]);
+
+        $this->assertGuest();
+    }
 }
