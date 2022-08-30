@@ -1,9 +1,9 @@
-name: Fix Code Style
+name: Code Sniffer
 
 on: [push]
 
 jobs:
-  laravel-pint:
+  laravel-code-formatting:
     runs-on: ubuntu-latest
 
     steps:
