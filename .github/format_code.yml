@@ -1,6 +1,3 @@
-
-// .github/format_code.yml
-
 name: Fix Code Style
 
 on:
