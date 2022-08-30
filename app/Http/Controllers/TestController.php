@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class TestController extends Controller
 {
-    function test(){
+    public function test()
+    {
         echo 'Hallo';
     }
-    function testing(){
+
+    public function testing()
+    {
         echo 'Hallo';
     }
-    function testRuns(){
+
+    public function testRuns()
+    {
         echo 'Hallo';
     }
 }
