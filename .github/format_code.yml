@@ -2,7 +2,7 @@ name: Fix Code Style
 
 on:
   pull_request:
-    branches: [dev]
+    branches: [main]
 
 jobs:
   laravel-pint:
