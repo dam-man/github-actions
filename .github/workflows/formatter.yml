@@ -1,11 +1,6 @@
-
-// .github/format_code.yml
-
 name: Fix Code Style
 
-on:
-  pull_request:
-    branches: [dev]
+on: [push]
 
 jobs:
   laravel-pint:
