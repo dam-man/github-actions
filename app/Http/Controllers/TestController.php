@@ -9,4 +9,7 @@ class TestController extends Controller
     function test(){
         echo 'Hallo';
     }
+    function testing(){
+        echo 'Hallo';
+    }
 }
