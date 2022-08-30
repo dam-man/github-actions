@@ -9,14 +9,14 @@ on:
       - features/**
 
 jobs:
-  laravel-tests:
+  tests:
     runs-on: ubuntu-latest
     # Service container Mysql mysql
     services:
       # Label used to access the service container
       mysql:
         # Docker Hub image (also with version)
-        image: mysql:5.7
+        image: mysql:latest
         env:
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
           MYSQL_DATABASE:  db_test_laravel
