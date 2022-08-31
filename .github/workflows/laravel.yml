@@ -1,6 +1,6 @@
 # GithHub Actions Workflow generated with Ghygen
 # Original configuration: https://ghygen.hi-folks.dev?code=3c09b5fa95e4dd96c69dab246c9bd9d9
-name: Laravel
+name: CI/CD Runner
 on:
   push:
     branches:
@@ -85,9 +85,8 @@ jobs:
       - name: PHP Version
         run: php --version
 
-      # Code quality
       - name: Execute tests via PHPUnit
-        # Set environment
+
         env:
           DB_CONNECTION: mysql
           DB_DATABASE: db_test_laravel

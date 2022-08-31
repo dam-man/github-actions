@@ -1,4 +1,4 @@
-name: Code Sniffer
+name: Laravel Code Formatting
 
 on: [push]
 
@@ -19,7 +19,7 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Applied Laravel (Pint) Code Formatting
+          commit_message: Check Laravel Code Formatting
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
 
